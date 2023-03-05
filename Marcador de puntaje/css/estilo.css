@@ -1,0 +1,192 @@
+/* Variables */
+
+:root{
+    --telefono: 480px;
+    --tablet: 768px;
+    --desktop: 992px;
+    --desktopXL: 1200px;
+}
+
+/* Globales */
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+}
+
+.contenedor{
+    width: min(120rem, 95%);
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3{
+    font-weight: normal;
+}
+
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 3.4rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2.6rem;
+}
+p{
+    font-size: 2rem;
+    line-height: 1.5rem;
+}
+
+img,
+picture{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.resetear-lista{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* Utilidades */
+
+.seccion {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.contenido-centrado {
+    width: min(98rem, 95%);
+    margin: 0 auto;
+}
+
+.alinear-derecha{
+    display: flex;
+    justify-content: right;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+
+/* Diseño */
+
+.caja{
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 490px){
+    .caja{
+        flex-direction: row;
+    }
+}
+
+.bloque{
+    height: 32rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media (min-width: 490px){
+    .bloque{
+        width: 50%;
+        height: 30rem;
+        justify-content: center;
+    }
+}
+.rojo{
+    background-color: red;
+}
+.azul{
+    background-color: blue;
+}
+
+.volteado{
+    transform: rotate(180deg);
+}
+@media (min-width: 490px){
+    .volteado{
+        transform: rotate(0deg);
+    }
+}
+
+.marcador{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 8rem;
+}
+@media (min-width: 490px){
+    .marcador{
+        font-size: 10rem;
+        margin-top: -6rem;
+    }
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 2rem;
+}
+@media (min-width: 490px){
+    .botones{
+        margin-top: 5rem;
+    }
+}
+.boton{
+    display: grid;
+    place-items: center;
+    border: none;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    font-size: 3rem;
+    background-color: #ffff00;
+    cursor: pointer;
+}
+
+.reiniciar{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: right;
+    right: 2rem;
+    bottom: 6.5rem;
+    align-items: center;
+}
+@media (min-width: 490px){
+    .reiniciar{
+        justify-content: center;
+        left: .1rem;
+        top: 23rem;
+        height: unset;
+    }
+}
+.reiniciar button{
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
